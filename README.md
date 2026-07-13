@@ -1,6 +1,11 @@
 # I18n Laravel Pull Action
 
-This action pulls i18n keysets from [localang.xyz](https://localang.xyz) service to your Laravel project.
+> ⚠️ **Deprecated — no longer functional.** This action synchronized translations with the
+> hosted Localang service, which has been **discontinued**. It is kept for reference only.
+> The [localang-i18n-js](https://github.com/pavelpilyak/localang-i18n-js) library and its
+> ESLint plugin remain usable standalone.
+
+This action pulls i18n keysets from the hosted Localang service to your Laravel project.
 
 ## Inputs
 
@@ -32,7 +37,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Pull translations
-        uses: localang/localang-i18n-laravel-pull-action@v0.0.1
+        uses: pavelpilyak/localang-i18n-laravel-pull-action@v0.0.1
         with:
           api-key: ${{ secrets.LOCALANG_API_KEY }}
           project-id: 1
